@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bala Subrahmanya | Developer Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(270deg, #232526, #414345, #232526);
+      background-size: 600% 600%;
+      animation: gradientShift 15s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      backdrop-filter: blur(12px);
+      max-width: 400px;
+      width: 90%;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    p.tagline {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .socials a:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.15);
+    }
+
+    .info {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #bbb;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .socials a {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Profile Image" />
+    <h1>Bala Subrahmanya</h1>
+    <p class="tagline">Just a human training a machine to think 🤖 | AIML Student</p>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/bala-subrahmanya-413221257" target="_blank" title="LinkedIn">
+        <i data-lucide="linkedin"></i>
+      </a>
+      <a href="mailto:balasubrahmanya3002@gmail.com" title="Email">
+        <i data-lucide="mail"></i>
+      </a>
+      <a href="tel:+917019079848" title="Call">
+        <i data-lucide="phone"></i>
+      </a>
+      <a href="https://www.instagram.com/_2003.subrahmanya_/" target="_blank" title="Instagram">
+        <i data-lucide="instagram"></i>
+      </a>
+    </div>
+
+    <div class="info">
+      📧 <strong>balasubrahmanya3002@gmail.com</strong><br>
+      📱 <strong>+91-7019079848</strong>
+    </div>
+
+    <footer>Made with ❤️ by Bala | #AIML #RSS #1percent</footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
